@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function Hero() {
   const [scrollY, setScrollY] = useState(0);
@@ -90,9 +91,12 @@ export default function Hero() {
               
               <div className="relative rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 hover:-translate-y-2">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary-500/20 to-secondary-500/20 mix-blend-overlay"></div>
-                <img
+                <Image
                   src="/images/gallery/IMG_8909.JPG"
                   alt="Dr. Antonio Balestra"
+                  width={600}
+                  height={800}
+                  unoptimized
                   className="w-full h-auto object-cover"
                   style={{
                     transform: `translateY(${scrollY * 0.1}px)`,

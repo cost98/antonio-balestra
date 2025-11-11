@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { FaBars, FaTimes, FaPhone } from "react-icons/fa";
 
 export default function Header() {
@@ -38,9 +39,12 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center group">
             <div className="relative">
-              <img
+              <Image
                 src="/images/logos/logo_AB.svg"
                 alt="Dr. Antonio Balestra"
+                width={48}
+                height={48}
+                unoptimized
                 className={`transition-all duration-500 ${
                   isScrolled ? "h-10" : "h-12"
                 } w-auto group-hover:scale-105`}

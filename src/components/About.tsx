@@ -1,4 +1,5 @@
 import { FaGraduationCap, FaHospital, FaAward, FaGlobe } from "react-icons/fa";
+import Image from "next/image";
 
 export default function About() {
   const milestones = [
@@ -48,9 +49,12 @@ export default function About() {
             {/* Image Side */}
             <div className="relative">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl group">
-                <img
+                <Image
                   src="/images/gallery/IMG_8913.JPG"
                   alt="Dr. Antonio Balestra"
+                  width={800}
+                  height={1000}
+                  unoptimized
                   className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary-900/80 via-primary-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -78,7 +82,7 @@ export default function About() {
                   Specializzato in <strong>alimentazione e nutrizione umana</strong>, con particolare focus su pazienti diabetici e patologie metaboliche complesse.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  Attualmente lavoro presso l'<strong className="text-primary-600">ASST Santi Paolo e Carlo</strong> di Milano, nel reparto di Ortopedia e Traumatologia, dove mi occupo dell'ambulatorio <strong>Piede Diabetico</strong>, collaborando con un team multidisciplinare.
+                  Attualmente lavoro presso l&apos;<strong className="text-primary-600">ASST Santi Paolo e Carlo</strong> di Milano, nel reparto di Ortopedia e Traumatologia, dove mi occupo dell&apos;ambulatorio <strong>Piede Diabetico</strong>, collaborando con un team multidisciplinare.
                 </p>
               </div>
 
@@ -140,10 +144,10 @@ export default function About() {
               <div>
                 <h3 className="text-2xl font-bold mb-4">Focus di Ricerca</h3>
                 <p className="text-white/90 text-lg leading-relaxed mb-4">
-                  La mia tesi di laurea magistrale si è concentrata sullo <strong>studio osservazionale prospettico clinico sul trattamento delle ulcere nel piede diabetico</strong>, integrando la dieta con l'uso di integratori nutraceutici.
+                  La mia tesi di laurea magistrale si è concentrata sullo <strong>studio osservazionale prospettico clinico sul trattamento delle ulcere nel piede diabetico</strong>, integrando la dieta con l&apos;uso di integratori nutraceutici.
                 </p>
                 <p className="text-white/80 text-base">
-                  Un approccio innovativo che unisce nutrizione clinica e terapia integrata, con risultati pubblicati in collaborazione con l'Università di Milano e Harvard University.
+                  Un approccio innovativo che unisce nutrizione clinica e terapia integrata, con risultati pubblicati in collaborazione con l&apos;Università di Milano e Harvard University.
                 </p>
               </div>
             </div>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FaLinkedin, FaFacebook, FaInstagram, FaPhone, FaEnvelope, FaMapMarkerAlt, FaHeart } from "react-icons/fa";
 
 export default function Footer() {
@@ -19,9 +20,12 @@ export default function Footer() {
           <div className="space-y-6">
             <div className="relative group">
               <div className="absolute -inset-2 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-2xl opacity-0 group-hover:opacity-20 blur transition-all duration-500"></div>
-              <img
+              <Image
                 src="/images/logos/logo_esteso.png"
                 alt="Dr. Antonio Balestra"
+                width={180}
+                height={56}
+                unoptimized
                 className="h-14 w-auto relative brightness-0 invert hover:scale-105 transition-transform"
               />
             </div>
