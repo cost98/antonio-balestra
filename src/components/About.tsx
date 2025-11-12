@@ -137,20 +137,18 @@ export default function About() {
 
           {/* Research Focus */}
           <div className="bg-gradient-to-br from-primary-600 to-secondary-600 rounded-3xl p-10 md:p-12 text-white shadow-2xl">
-            <div className="flex items-start gap-6">
-              <div className="flex-shrink-0 w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
-                <FaGraduationCap className="text-4xl" />
+            <div className="flex items-center gap-4 mb-6">
+              <div className="flex-shrink-0 w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
+                <FaGraduationCap className="text-3xl" />
               </div>
-              <div>
-                <h3 className="text-2xl font-bold mb-4">Focus di Ricerca</h3>
-                <p className="text-white/90 text-lg leading-relaxed mb-4">
-                  La mia tesi di laurea magistrale si è concentrata sullo <strong>studio osservazionale prospettico clinico sul trattamento delle ulcere nel piede diabetico</strong>, integrando la dieta con l&apos;uso di integratori nutraceutici.
-                </p>
-                <p className="text-white/80 text-base">
-                  Un approccio innovativo che unisce nutrizione clinica e terapia integrata, con risultati pubblicati in collaborazione con l&apos;Università di Milano e Harvard University.
-                </p>
-              </div>
+              <h3 className="text-2xl font-bold">Focus di Ricerca</h3>
             </div>
+            <p className="text-white/90 text-lg leading-relaxed mb-4">
+              La mia tesi di laurea magistrale si è concentrata sullo <strong>studio osservazionale prospettico clinico sul trattamento delle ulcere nel piede diabetico</strong>, integrando la dieta con l&apos;uso di integratori nutraceutici.
+            </p>
+            <p className="text-white/80 text-base">
+              Un approccio innovativo che unisce nutrizione clinica e terapia integrata, con risultati pubblicati in collaborazione con l&apos;Università di Milano e Harvard University.
+            </p>
           </div>
         </div>
       </div>
