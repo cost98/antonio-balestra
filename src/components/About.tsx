@@ -138,8 +138,8 @@ export default function About() {
           {/* Research Focus */}
           <div className="bg-gradient-to-br from-primary-600 to-secondary-600 rounded-3xl p-10 md:p-12 text-white shadow-2xl">
             <div className="flex items-start gap-6">
-              <div className="flex-shrink-0 w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center text-4xl">
-                📊
+              <div className="flex-shrink-0 w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
+                <FaGraduationCap className="text-4xl" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold mb-4">Focus di Ricerca</h3>

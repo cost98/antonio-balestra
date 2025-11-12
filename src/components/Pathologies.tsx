@@ -64,7 +64,7 @@ export default function Pathologies() {
         {/* Header */}
         <div className="text-center mb-20">
           <div className="inline-block px-6 py-2 bg-red-100 rounded-full mb-4">
-            <span className="text-red-600 font-semibold text-sm">🏥 AREE DI SPECIALIZZAZIONE</span>
+            <span className="text-red-600 font-semibold text-sm">AREE DI SPECIALIZZAZIONE</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-extrabold mb-6">
             Patologie <span className="gradient-text">Trattate</span>

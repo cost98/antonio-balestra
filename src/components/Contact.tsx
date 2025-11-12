@@ -30,9 +30,9 @@ export default function Contact() {
   };
 
   const locations = [
-    { city: "Milano", address: "ASST Santi Paolo e Carlo", icon: "🏥" },
-    { city: "Pavia", address: "Via Cascinazza 15", icon: "🏢" },
-    { city: "Brescia", address: "Studio Medico Privato", icon: "🏥" },
+    { city: "Milano", address: "ASST Santi Paolo e Carlo" },
+    { city: "Pavia", address: "Via Cascinazza 15" },
+    { city: "Brescia", address: "Studio Medico Privato" },
   ];
 
   return (
@@ -211,7 +211,7 @@ export default function Contact() {
                   {locations.map((location, index) => (
                     <div key={index} className="bg-white/15 backdrop-blur-sm rounded-xl p-4 hover:bg-white/25 transition-all border border-white/20">
                       <div className="flex items-center gap-3">
-                        <span className="text-3xl">{location.icon}</span>
+                        <FaMapMarkerAlt className="text-2xl text-primary-300" />
                         <div>
                           <p className="font-bold text-lg">{location.city}</p>
                           <p className="text-sm text-white/90 font-medium">{location.address}</p>
@@ -221,7 +221,7 @@ export default function Contact() {
                   ))}
                 </div>
                 <p className="text-xs text-white/70 mt-4 bg-white/10 p-3 rounded-lg">
-                  💡 Le visite vengono organizzate su appuntamento in base alla sede più comoda per te
+                  Le visite vengono organizzate su appuntamento in base alla sede più comoda per te
                 </p>
               </div>
 
@@ -250,7 +250,7 @@ export default function Contact() {
                   </div>
                 </div>
                 <p className="text-xs text-gray-500 mt-4 bg-primary-50 p-3 rounded-lg border border-primary-200">
-                  💡 Prenota con anticipo per avere più scelta di orari
+                  Prenota con anticipo per avere più scelta di orari
                 </p>
               </div>
             </div>
