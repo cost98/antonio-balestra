@@ -67,10 +67,9 @@ export default function Header() {
             ))}
             <a
               href="tel:+393393284926"
-              className="flex items-center gap-2 bg-gradient-to-r from-primary-600 to-primary-500 text-white px-6 py-3 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300 font-semibold"
+              className="bg-gradient-to-r from-primary-600 to-primary-500 text-white px-6 py-3 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300 font-semibold"
             >
-              <FaPhone className="animate-pulse" />
-              <span>Prenota</span>
+              Prenota
             </a>
           </div>
 

@@ -12,9 +12,9 @@ export default function Footer() {
       
       <div className="container mx-auto px-4 py-16 relative z-10">
         {/* Top Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16 pb-16 border-b border-white/10">
-          {/* Left: Brand */}
-          <div>
+        <div className="mb-16 pb-16 border-b border-white/10">
+          {/* Brand */}
+          <div className="max-w-2xl">
             <Image
               src="/images/logos/logo_esteso.png"
               alt="Dr. Antonio Balestra"
@@ -23,13 +23,13 @@ export default function Footer() {
               unoptimized
               className="h-16 w-auto brightness-0 invert mb-6"
             />
-            <p className="text-gray-400 text-lg leading-relaxed mb-8 max-w-md">
+            <p className="text-gray-400 text-lg leading-relaxed mb-8">
               Trasforma la tua salute attraverso la scienza della nutrizione. 
               Approccio personalizzato basato su evidenze scientifiche.
             </p>
             
             {/* Social Media */}
-            <div className="flex gap-3">
+            <div className="flex gap-4">
               {[
                 { icon: <FaLinkedin />, href: "#" },
                 { icon: <FaFacebook />, href: "#" },
@@ -38,31 +38,14 @@ export default function Footer() {
                 <a
                   key={index}
                   href={social.href}
-                  className="group relative w-12 h-12 bg-white/5 hover:bg-primary-500 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110"
+                  className="w-11 h-11 rounded-full bg-white/10 hover:bg-primary-500 flex items-center justify-center transition-all duration-300 hover:scale-110 border border-white/20 hover:border-primary-500"
                   aria-label="Social media"
                 >
-                  <span className="text-xl text-gray-400 group-hover:text-white transition-colors">
+                  <span className="text-lg text-white">
                     {social.icon}
                   </span>
                 </a>
               ))}
-            </div>
-          </div>
-
-          {/* Right: Quick Actions */}
-          <div className="lg:flex lg:justify-end lg:items-start">
-            <div className="bg-gradient-to-br from-primary-600 to-primary-700 rounded-2xl p-8 max-w-md">
-              <h3 className="text-2xl font-bold mb-3">Pronto a iniziare?</h3>
-              <p className="text-white/90 mb-6">
-                Prenota la tua consulenza nutrizionale personalizzata
-              </p>
-              <a
-                href="#contact"
-                className="group inline-flex items-center gap-3 bg-white text-primary-600 px-6 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-all hover:gap-4"
-              >
-                Contattami Ora
-                <FaArrowRight className="text-sm" />
-              </a>
             </div>
           </div>
         </div>
@@ -94,12 +77,16 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-4">Contatti</h4>
             <div className="space-y-4">
-              <a href="tel:+393393284926" className="flex items-center gap-3 text-gray-400 hover:text-primary-400 transition-colors group">
-                <FaPhone className="text-primary-500" />
+              <a href="tel:+393393284926" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors group">
+                <div className="w-9 h-9 rounded-lg bg-primary-500/20 flex items-center justify-center group-hover:bg-primary-500 transition-colors">
+                  <FaPhone className="text-primary-400 group-hover:text-white text-sm" />
+                </div>
                 <span>339 328 4926</span>
               </a>
-              <a href="mailto:info@antoniobalestra.it" className="flex items-center gap-3 text-gray-400 hover:text-primary-400 transition-colors group">
-                <FaEnvelope className="text-primary-500" />
+              <a href="mailto:info@antoniobalestra.it" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors group">
+                <div className="w-9 h-9 rounded-lg bg-primary-500/20 flex items-center justify-center group-hover:bg-primary-500 transition-colors">
+                  <FaEnvelope className="text-primary-400 group-hover:text-white text-sm" />
+                </div>
                 <span>info@antoniobalestra.it</span>
               </a>
             </div>
@@ -108,8 +95,10 @@ export default function Footer() {
           {/* Location */}
           <div>
             <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-4">Sede Principale</h4>
-            <div className="flex items-start gap-3 text-gray-400">
-              <FaMapMarkerAlt className="text-primary-500 mt-1" />
+            <div className="flex items-start gap-3 text-gray-300">
+              <div className="w-9 h-9 rounded-lg bg-primary-500/20 flex items-center justify-center flex-shrink-0">
+                <FaMapMarkerAlt className="text-primary-400 text-sm" />
+              </div>
               <div>
                 <p className="font-medium">Via Cascinazza 15</p>
                 <p>27100 Pavia, Italia</p>

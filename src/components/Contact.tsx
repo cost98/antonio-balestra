@@ -174,7 +174,7 @@ export default function Contact() {
                     >
                       +39 339 328 4926
                     </a>
-                    <p className="text-sm text-gray-600 mt-2 font-medium">📅 Lun-Ven 9:00-18:00</p>
+                    <p className="text-sm text-gray-600 mt-2 font-medium">Lun-Ven 9:00-18:00</p>
                     <p className="text-xs text-gray-500 mt-1">Preferibile orario mattutino</p>
                   </div>
                 </div>

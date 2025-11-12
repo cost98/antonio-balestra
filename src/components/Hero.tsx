@@ -34,8 +34,8 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Testo */}
           <div className="space-y-8 text-center lg:text-left animate-fade-in-up">
-            <div className="inline-block px-6 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-primary-200 shadow-sm">
-              <span className="text-primary-600 font-semibold text-sm">Nutrizionista Clinico • Milano & Pavia</span>
+            <div className="inline-block">
+              <span className="text-primary-600 font-medium text-sm uppercase tracking-wider">Nutrizionista Clinico</span>
             </div>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight">
