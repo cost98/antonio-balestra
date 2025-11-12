@@ -47,7 +47,7 @@ export default function Method() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-20 text-white">
           <div className="inline-block px-6 py-2 bg-white/20 backdrop-blur-sm rounded-full mb-6">
-            <span className="font-semibold text-sm">🎯 IL MIO APPROCCIO</span>
+            <span className="font-semibold text-sm">IL MIO APPROCCIO</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-extrabold mb-6">
             Un Metodo in <span className="text-yellow-300">4 Step</span>

@@ -50,7 +50,7 @@ export default function Hero() {
                 className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-primary-600 to-primary-500 rounded-full overflow-hidden shadow-lg transition-all hover:scale-105 hover:shadow-2xl"
               >
                 <span className="relative z-10 flex items-center gap-2">
-                  📞 Prenota Visita
+                  Prenota Visita
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-primary-700 to-primary-600 opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </a>

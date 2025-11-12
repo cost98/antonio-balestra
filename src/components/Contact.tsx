@@ -193,7 +193,7 @@ export default function Contact() {
                     >
                       info@antoniobalestra.it
                     </a>
-                    <p className="text-sm text-gray-600 mt-2 font-medium">⏱️ Risposta entro 24h</p>
+                    <p className="text-sm text-gray-600 mt-2 font-medium">Risposta entro 24h</p>
                     <p className="text-xs text-gray-500 mt-1">Consulenza anche via email</p>
                   </div>
                 </div>
