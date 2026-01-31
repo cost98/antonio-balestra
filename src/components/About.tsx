@@ -5,23 +5,37 @@ export default function About() {
   const milestones = [
     {
       icon: <FaHospital className="text-3xl" />,
-      title: "ASST Milano",
-      description: "Ambulatorio Piede Diabetico",
-      year: "2023",
+      title: "Laurea Triennale in Scienze Biomediche",
+      description: "Università degli Studi di Pavia",
+      year: "XXXX",
       color: "from-blue-500 to-cyan-500",
     },
     {
       icon: <FaAward className="text-3xl" />,
-      title: "Laurea Magistrale",
-      description: "Alimentazione e Nutrizione",
-      year: "2024",
+      title: "Tirocinio curricolare in Biochimica Clinica",
+      description: "Università degli Studi di Pavia",
+      year: "XXXX",
       color: "from-green-500 to-emerald-500",
     },
     {
       icon: <FaGlobe className="text-3xl" />,
-      title: "Certificazione TOEIC",
-      description: "Inglese livello B2-C1",
-      year: "2023",
+      title: "Laurea Magistrale in Alimentazione e Nutrizione Umana",
+      description: "Università degli Studi di Milano",
+      year: "XXXX",
+      color: "from-purple-500 to-pink-500",
+    },
+    {
+      icon: <FaGlobe className="text-3xl" />,
+      title: "Master di II livello in Nutrizione Clinica",
+      description: "Università degli Studi di Pavia",
+      year: "XXXX",
+      color: "from-purple-500 to-pink-500",
+    },
+    {
+      icon: <FaGlobe className="text-3xl" />,
+      title: "Studente di Medicina e Chirurgia",
+      description: "Università degli Studi di Milano",
+      year: "XXXX",
       color: "from-purple-500 to-pink-500",
     },
   ];
@@ -127,7 +141,6 @@ export default function About() {
                   {/* Connection Line */}
                   {index < milestones.length - 1 && (
                     <div className="hidden lg:block absolute top-12 left-full w-full h-1 -ml-3">
-                      <div className="w-6 h-1 bg-gradient-to-r from-primary-300 to-transparent"></div>
                     </div>
                   )}
                 </div>
@@ -143,12 +156,9 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold">Focus di Ricerca</h3>
             </div>
-            <p className="text-white/90 text-lg leading-relaxed mb-4">
-              La mia tesi di laurea magistrale si è concentrata sullo <strong>studio osservazionale prospettico clinico sul trattamento delle ulcere nel piede diabetico</strong>, integrando la dieta con l&apos;uso di integratori nutraceutici.
-            </p>
-            <p className="text-white/80 text-base">
-              Un approccio innovativo che unisce nutrizione clinica e terapia integrata, con risultati pubblicati in collaborazione con l&apos;Università di Milano e Harvard University.
-            </p>
+              <p className="text-white/90 text-lg leading-relaxed mb-4">
+                Il mio percorso accademico si è articolato attraverso una <strong>laurea triennale in Scienze Biomediche</strong> con una tesi sull’applicazione della dieta chetogenica nel diabete, nell’epilessia farmaco-resistente e nelle patologie neurodegenerative, un tirocinio in Biochimica Clinica, una <strong>laurea magistrale in Alimentazione e Nutrizione Umana</strong> con tesi sulla dietoterapia e integrazione della vitamina D nei pazienti con piede diabetico, e un <strong>master di II livello in Nutrizione Clinica</strong> focalizzato sulla gestione nutrizionale del paziente diabetico con anemia.
+              </p>
           </div>
         </div>
       </div>
