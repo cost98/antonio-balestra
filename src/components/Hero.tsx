@@ -101,7 +101,7 @@ export default function Hero() {
               <div className="relative rounded-3xl overflow-hidden shadow-2xl lg:hover:shadow-3xl transition-all duration-500 lg:hover:-translate-y-2">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary-500/20 to-secondary-500/20 mix-blend-overlay"></div>
                 <Image
-                  src="/images/gallery/IMG_8909.JPG"
+                  src="/images/gallery/IMG_8909.webp"
                   alt="Dr. Antonio Balestra"
                   width={600}
                   height={800}

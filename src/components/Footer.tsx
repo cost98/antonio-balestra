@@ -16,7 +16,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="max-w-2xl">
             <Image
-              src="/images/logos/logo_esteso.png"
+              src="/images/logos/logo_esteso.webp"
               alt="Dr. Antonio Balestra"
               width={220}
               height={68}

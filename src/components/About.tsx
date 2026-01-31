@@ -50,7 +50,7 @@ export default function About() {
             <div className="relative">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl group">
                 <Image
-                  src="/images/gallery/IMG_8913.JPG"
+                  src="/images/gallery/IMG_8913.webp"
                   alt="Dr. Antonio Balestra"
                   width={800}
                   height={1000}
