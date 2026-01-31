@@ -34,23 +34,23 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Testo */}
           <div className="space-y-8 text-center lg:text-left animate-fade-in-up">
-            <div className="inline-block">
-              <span className="text-primary-600 font-medium text-sm uppercase tracking-wider">Nutrizionista Clinico</span>
-            </div>
-
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight">
+                       <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight">
               Dr. Antonio<br />
               <span className="gradient-text">Balestra</span>
             </h1>
+            <div className="inline-block">
+              <span className="text-primary-600 font-medium text-sm uppercase tracking-wider">Biologo Nutrizionista<br />Specialista in Nutrizione Clinica</span>
+            </div>
+
+ 
             
             <p className="text-xl md:text-2xl text-gray-700 font-medium">
-              Trasforma la tua salute attraverso<br className="hidden md:block" />
+              Trasforma la tua salute attraverso <br className="hidden md:block" />
               <span className="text-primary-600">la scienza della nutrizione</span>
             </p>
             
             <p className="text-lg text-gray-600 max-w-2xl leading-relaxed">
-              Specializzato in <strong>nutrizione per diabetici</strong>, <strong>piede diabetico</strong> e 
-              piani alimentari personalizzati. Approccio multidisciplinare basato su evidenze scientifiche.
+              Biologo Nutrizionista e specialista in Nutrizione Clinica, con particolare competenza nella gestione del <strong>diabete</strong>, dei  <strong>disturbi intestinali</strong>, delle <strong>patologie metaboliche</strong> e nella <strong>nutrizione sportiva</strong>. Approccio multidisciplinare basato su evidenze scientifiche, nutrizione metabolica e nutrigenomica
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
