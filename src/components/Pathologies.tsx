@@ -1,14 +1,23 @@
-import { FaHeartbeat, FaWeight, FaBrain, FaHeart, FaDna, FaStethoscope } from "react-icons/fa";
+import { FaHeartbeat, FaWeight, FaBrain, FaHeart, FaDna, FaStethoscope, FaRunning, FaSpa, FaUserMd, FaAppleAlt } from "react-icons/fa";
+import { GiFootTrip } from "react-icons/gi";
 
 export default function Pathologies() {
   const pathologies = [
     {
       icon: <FaHeartbeat className="text-4xl" />,
-      title: "Diabete Tipo 1 e 2",
+      title: "Diabete Mellito Tipo 1 e Tipo 2",
       description: "Gestione nutrizionale per il controllo glicemico ottimale e prevenzione delle complicazioni.",
       gradient: "from-red-500 to-pink-500",
       bgGradient: "from-red-50 to-pink-50",
       patients: "200+",
+    },
+    {
+      icon: <GiFootTrip className="text-4xl" />,
+      title: "Piede Diabetico e Complicanze Metaboliche",
+      description: "Approccio nutrizionale specifico per la gestione delle complicanze del diabete.",
+      gradient: "from-rose-500 to-red-500",
+      bgGradient: "from-rose-50 to-red-50",
+      patients: "50+",
     },
     {
       icon: <FaWeight className="text-4xl" />,
@@ -16,7 +25,7 @@ export default function Pathologies() {
       description: "Programmi personalizzati per la perdita di peso sostenibile e il miglioramento metabolico.",
       gradient: "from-orange-500 to-amber-500",
       bgGradient: "from-orange-50 to-amber-50",
-      patients: "150+",
+      patients: "180+",
     },
     {
       icon: <FaStethoscope className="text-4xl" />,
@@ -24,31 +33,63 @@ export default function Pathologies() {
       description: "Interventi nutrizionali per ipertensione, dislipidemia e resistenza insulinica.",
       gradient: "from-blue-500 to-cyan-500",
       bgGradient: "from-blue-50 to-cyan-50",
-      patients: "100+",
+      patients: "120+",
+    },
+    {
+      icon: <FaDna className="text-4xl" />,
+      title: "Disturbi Gastrointestinali e Disbiosi",
+      description: "Riequilibrio del microbiota intestinale e gestione dei disturbi digestivi.",
+      gradient: "from-green-500 to-emerald-500",
+      bgGradient: "from-green-50 to-emerald-50",
+      patients: "150+",
+    },
+    {
+      icon: <FaAppleAlt className="text-4xl" />,
+      title: "Colon Irritabile, Reflusso, Gastrite, Celiachia, Intolleranze",
+      description: "Piani alimentari personalizzati per patologie gastrointestinali specifiche.",
+      gradient: "from-teal-500 to-green-500",
+      bgGradient: "from-teal-50 to-green-50",
+      patients: "140+",
     },
     {
       icon: <FaHeart className="text-4xl" />,
       title: "Malattie Cardiovascolari",
       description: "Diete cardioprotettive per la prevenzione e il supporto terapeutico.",
-      gradient: "from-rose-500 to-red-500",
-      bgGradient: "from-rose-50 to-red-50",
-      patients: "80+",
+      gradient: "from-pink-500 to-rose-500",
+      bgGradient: "from-pink-50 to-rose-50",
+      patients: "90+",
     },
     {
       icon: <FaBrain className="text-4xl" />,
-      title: "Patologie Neurologiche",
-      description: "Protocolli di dieta chetogenica per epilessia e malattie neurodegenerative.",
+      title: "Patologie Neurologiche Selezionate",
+      description: "Protocolli nutrizionali specifici per supporto neurologico e cognitivo.",
       gradient: "from-purple-500 to-indigo-500",
       bgGradient: "from-purple-50 to-indigo-50",
-      patients: "50+",
+      patients: "40+",
     },
     {
-      icon: <FaDna className="text-4xl" />,
-      title: "Disturbi Gastrointestinali",
-      description: "Piani alimentari per colite, gastrite, reflusso e altre patologie digestive.",
-      gradient: "from-green-500 to-emerald-500",
-      bgGradient: "from-green-50 to-emerald-50",
-      patients: "120+",
+      icon: <FaUserMd className="text-4xl" />,
+      title: "Fragilità, Sarcopenia e Paziente Anziano",
+      description: "Nutrizione mirata per preservare massa muscolare e funzionalità nell'anziano.",
+      gradient: "from-gray-500 to-slate-500",
+      bgGradient: "from-gray-50 to-slate-50",
+      patients: "70+",
+    },
+    {
+      icon: <FaRunning className="text-4xl" />,
+      title: "Nutrizione Sportiva (Amatoriale e Agonistica)",
+      description: "Piani nutrizionali per ottimizzare performance e recupero nello sport.",
+      gradient: "from-cyan-500 to-blue-500",
+      bgGradient: "from-cyan-50 to-blue-50",
+      patients: "160+",
+    },
+    {
+      icon: <FaSpa className="text-4xl" />,
+      title: "Prevenzione, Antiaging e Longevità",
+      description: "Strategie nutrizionali per la prevenzione e il benessere a lungo termine.",
+      gradient: "from-violet-500 to-purple-500",
+      bgGradient: "from-violet-50 to-purple-50",
+      patients: "100+",
     },
   ];
 

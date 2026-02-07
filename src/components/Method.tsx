@@ -1,33 +1,53 @@
-import { FaCheckCircle, FaClipboardList, FaUserCheck, FaPills, FaChartLine } from "react-icons/fa";
+import { FaCheckCircle, FaClipboardList, FaUserCheck, FaPills, FaChartLine, FaMicroscope } from "react-icons/fa";
 
 export default function Method() {
   const steps = [
     {
       number: "01",
       icon: <FaClipboardList className="text-4xl" />,
-      title: "Anamnesi Dettagliata",
-      description: "Valutazione completa della storia clinica, esami ematici e strumentali per una diagnosi accurata.",
+      title: "Valutazione Clinica",
+      description: "Raccolta dettagliata di tutte le informazioni necessarie per un quadro clinico completo.",
+      details: [
+        "Anamnesi familiare (fondamentale in ottica preventiva)",
+        "Anamnesi patologica remota",
+        "Anamnesi fisiologica",
+        "Valutazione degli esami ematici"
+      ],
       color: "from-blue-400 to-blue-600",
     },
     {
       number: "02",
-      icon: <FaUserCheck className="text-4xl" />,
-      title: "Piano Personalizzato",
-      description: "Sviluppo di un piano alimentare su misura basato sulle esigenze metaboliche e cliniche del paziente.",
+      icon: <FaMicroscope className="text-4xl" />,
+      title: "Valutazioni Strumentali",
+      description: "Utilizzo di tecnologie avanzate per una valutazione precisa dello stato metabolico e nutrizionale.",
+      details: [
+        "Calorimetria indiretta COSMED",
+        "Bioimpedenziometria AKERN",
+        "Misurazioni antropometriche e psicometria"
+      ],
       color: "from-green-400 to-green-600",
     },
     {
       number: "03",
-      icon: <FaPills className="text-4xl" />,
-      title: "Integrazione Nutraceutica",
-      description: "Prescrizione mirata di integratori per ottimizzare la risposta terapeutica e supportare il metabolismo.",
+      icon: <FaUserCheck className="text-4xl" />,
+      title: "Dietoterapia Personalizzata",
+      description: "Elaborazione di un piano nutrizionale su misura basato sui dati clinici e strumentali raccolti.",
+      details: [
+        "Piano nutrizionale su misura",
+        "Integrazione nutraceutica solo se clinicamente indicata"
+      ],
       color: "from-purple-400 to-purple-600",
     },
     {
       number: "04",
       icon: <FaChartLine className="text-4xl" />,
       title: "Monitoraggio Continuo",
-      description: "Follow-up regolari per valutare i progressi e adattare il piano nutrizionale alle necessità in evoluzione.",
+      description: "Accompagnamento costante nel percorso per garantire risultati ottimali e duraturi nel tempo.",
+      details: [
+        "Follow-up periodici",
+        "Rivalutazioni cliniche",
+        "Adattamento del piano nel tempo"
+      ],
       color: "from-orange-400 to-orange-600",
     },
   ];
@@ -81,7 +101,17 @@ export default function Method() {
                   </div>
 
                   <h3 className="text-2xl font-bold mb-4 text-white">{step.title}</h3>
-                  <p className="text-white/80 leading-relaxed">{step.description}</p>
+                  <p className="text-white/80 leading-relaxed mb-4">{step.description}</p>
+
+                  {/* Details List */}
+                  <ul className="space-y-2">
+                    {step.details.map((detail, idx) => (
+                      <li key={idx} className="flex items-start gap-2 text-white/70 text-sm">
+                        <span className="text-yellow-300 mt-1">•</span>
+                        <span className="flex-1">{detail}</span>
+                      </li>
+                    ))}
+                  </ul>
 
                   {/* Hover Glow */}
                   <div className={`absolute inset-0 bg-gradient-to-br ${step.color} opacity-0 group-hover:opacity-20 rounded-2xl transition-opacity duration-500`}></div>
