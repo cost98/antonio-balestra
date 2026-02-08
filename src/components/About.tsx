@@ -119,7 +119,14 @@ export default function About() {
 
           {/* Milestones Timeline */}
           <div className="mb-16">
-            <h3 className="text-3xl font-bold text-center mb-12">Percorso Formativo</h3>
+            <h3 className="text-3xl font-bold text-center mb-8">Percorso Formativo</h3>
+            
+            <div className="mb-12">
+              <p className="text-gray-700 text-lg leading-relaxed">
+                Il mio percorso accademico si è articolato attraverso una <strong>laurea triennale in Scienze Biomediche</strong> con una tesi sull&apos;applicazione della dieta chetogenica nel diabete, nell&apos;epilessia farmaco-resistente e nelle patologie neurodegenerative, un tirocinio in Biochimica Clinica, una <strong>laurea magistrale in Alimentazione e Nutrizione Umana</strong> con tesi sulla dietoterapia e integrazione della vitamina D nei pazienti con piede diabetico, e un <strong>master di II livello in Nutrizione Clinica</strong> focalizzato sulla gestione nutrizionale del paziente diabetico con anemia.
+              </p>
+            </div>
+            
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {milestones.map((milestone, index) => (
                 <div key={index} className="group relative">
@@ -146,19 +153,6 @@ export default function About() {
                 </div>
               ))}
             </div>
-          </div>
-
-          {/* Research Focus */}
-          <div className="bg-gradient-to-br from-primary-600 to-secondary-600 rounded-3xl p-10 md:p-12 text-white shadow-2xl">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="flex-shrink-0 w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
-                <FaGraduationCap className="text-3xl" />
-              </div>
-              <h3 className="text-2xl font-bold">Focus di Ricerca</h3>
-            </div>
-              <p className="text-white/90 text-lg leading-relaxed mb-4">
-                Il mio percorso accademico si è articolato attraverso una <strong>laurea triennale in Scienze Biomediche</strong> con una tesi sull’applicazione della dieta chetogenica nel diabete, nell’epilessia farmaco-resistente e nelle patologie neurodegenerative, un tirocinio in Biochimica Clinica, una <strong>laurea magistrale in Alimentazione e Nutrizione Umana</strong> con tesi sulla dietoterapia e integrazione della vitamina D nei pazienti con piede diabetico, e un <strong>master di II livello in Nutrizione Clinica</strong> focalizzato sulla gestione nutrizionale del paziente diabetico con anemia.
-              </p>
           </div>
         </div>
       </div>

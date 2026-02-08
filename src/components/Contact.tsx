@@ -200,27 +200,27 @@ export default function Contact() {
               </div>
 
               {/* Locations */}
-              <div className="bg-gradient-to-br from-primary-600 via-primary-500 to-secondary-600 rounded-2xl shadow-xl p-6 text-white">
+              <div className="bg-white rounded-2xl shadow-lg p-6 border-2 border-gray-100 hover:border-primary-200 transition-all">
                 <div className="flex items-center gap-3 mb-5">
-                  <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-primary-600 to-secondary-600 rounded-xl flex items-center justify-center text-white shadow-lg">
                     <FaMapMarkerAlt className="text-xl" />
                   </div>
-                  <h4 className="font-bold text-xl">Le Mie Sedi</h4>
+                  <h4 className="font-bold text-gray-900 text-lg">Le Mie Sedi</h4>
                 </div>
                 <div className="space-y-3">
                   {locations.map((location, index) => (
-                    <div key={index} className="bg-white/15 backdrop-blur-sm rounded-xl p-4 hover:bg-white/25 transition-all border border-white/20">
+                    <div key={index} className="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-4 border border-primary-200">
                       <div className="flex items-center gap-3">
-                        <FaMapMarkerAlt className="text-2xl text-primary-300" />
+                        <FaMapMarkerAlt className="text-2xl text-primary-600" />
                         <div>
-                          <p className="font-bold text-lg">{location.city}</p>
-                          <p className="text-sm text-white/90 font-medium">{location.address}</p>
+                          <p className="font-bold text-lg text-gray-900">{location.city}</p>
+                          <p className="text-sm text-gray-700 font-medium">{location.address}</p>
                         </div>
                       </div>
                     </div>
                   ))}
                 </div>
-                <p className="text-xs text-white/70 mt-4 bg-white/10 p-3 rounded-lg">
+                <p className="text-sm text-gray-600 mt-4">
                   Le visite vengono organizzate su appuntamento in base alla sede più comoda per te
                 </p>
               </div>
@@ -249,7 +249,7 @@ export default function Contact() {
                     <p className="text-xs text-gray-600">Disponibilità limitata</p>
                   </div>
                 </div>
-                <p className="text-xs text-gray-500 mt-4 bg-primary-50 p-3 rounded-lg border border-primary-200">
+                <p className="text-sm text-gray-600 mt-4">
                   Prenota con anticipo per avere più scelta di orari
                 </p>
               </div>

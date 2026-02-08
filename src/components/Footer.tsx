@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="absolute top-10 right-10 w-64 h-64 bg-primary-500/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-10 left-10 w-64 h-64 bg-secondary-500/10 rounded-full blur-3xl"></div>
       
-      <div className="container mx-auto px-4 py-16 relative z-10">
+      <div className="container mx-auto px-4 py-24 relative z-10">
         {/* Top Section */}
         <div className="mb-16 pb-16 border-b border-white/10">
           {/* Brand */}

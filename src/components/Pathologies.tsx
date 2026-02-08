@@ -159,7 +159,7 @@ export default function Pathologies() {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <div className="inline-flex flex-col items-center gap-4 bg-gradient-to-br from-primary-50 to-secondary-50 rounded-2xl p-8 max-w-2xl mx-auto shadow-lg">
+          <div className="inline-flex flex-col items-center gap-4 max-w-2xl mx-auto">
             <p className="text-gray-700 text-lg font-medium">
               Non trovi la tua condizione? Contattami per una consulenza personalizzata.
             </p>

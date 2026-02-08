@@ -23,6 +23,7 @@ export default function Header() {
     { label: "Servizi", href: "#services" },
     { label: "Patologie", href: "#pathologies" },
     { label: "Metodo", href: "#method" },
+    { label: "Collaborazioni", href: "#collaborations" },
     { label: "Contatti", href: "#contact" },
   ];
 

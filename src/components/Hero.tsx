@@ -30,7 +30,7 @@ export default function Hero() {
       <div className="absolute top-20 right-10 w-72 h-72 bg-gradient-to-br from-primary-300/30 to-primary-400/30 rounded-full blur-3xl animate-float"></div>
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-gradient-to-br from-secondary-300/30 to-secondary-400/30 rounded-full blur-3xl animate-float" style={{ animationDelay: "2s" }}></div>
       
-      <div className="container mx-auto px-4 py-20 relative z-10">
+      <div className="container mx-auto px-4 py-24 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Testo */}
           <div className="space-y-8 text-center lg:text-left animate-fade-in-up">
