@@ -127,40 +127,34 @@ export default function Collaborations() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Team Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {team.map((member, index) => (
               <div
                 key={index}
-                className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
+                className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 overflow-hidden"
               >
                 {/* Gradient Background on Hover */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${member.bgGradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
                 
                 {/* Content */}
-                <div className="relative p-8">
-                  {/* Icon with Gradient */}
+                <div className="relative p-8 h-full flex flex-col">
                   <div className={`w-20 h-20 bg-gradient-to-br ${member.gradient} rounded-2xl flex items-center justify-center text-white mb-6 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg`}>
                     {member.icon}
                   </div>
-
-                  {/* Role & Specialization */}
-                  <div className="mb-4">
-                    <h4 className="text-2xl font-bold text-gray-900 mb-1 group-hover:text-gray-800 transition-colors">
-                      {member.role}
-                    </h4>
-                    <p className={`font-semibold bg-gradient-to-r ${member.gradient} bg-clip-text text-transparent text-lg`}>
-                      {member.specialization}
-                    </p>
-                  </div>
-
-                  {/* Description */}
-                  <p className="text-gray-600 leading-relaxed">
+                  
+                  <h3 className="text-xl font-bold text-gray-900">{member.role}</h3>
+                  <p className="text-primary-600 font-semibold mb-4 text-sm">{member.specialization}</p>
+                  
+                  <p className="text-gray-600 leading-relaxed flex-grow text-sm">
                     {member.description}
                   </p>
                 </div>
 
                 {/* Decorative Corner Accent */}
-                <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${member.gradient} opacity-5 rounded-bl-full transform group-hover:scale-150 transition-transform duration-700`}></div>
+                <div className="absolute top-0 right-0 w-20 h-20 opacity-10 group-hover:opacity-20 transition-opacity">
+                  <div className={`w-full h-full bg-gradient-to-br ${member.gradient} rounded-bl-full`}></div>
+                </div>
               </div>
             ))}
           </div>
