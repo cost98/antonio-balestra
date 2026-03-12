@@ -94,18 +94,16 @@ export default function Pathologies() {
   ];
 
   return (
-    <section id="pathologies" className="py-24 bg-white relative overflow-hidden">
-      {/* Animated Background */}
-      <div className="absolute inset-0">
-        <div className="absolute top-20 right-10 w-72 h-72 bg-primary-200/30 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-20 left-10 w-96 h-96 bg-secondary-200/30 rounded-full blur-3xl animate-float"></div>
-      </div>
+    <section id="pathologies" className="py-24 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+      {/* Background Decorations */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-primary-100 rounded-full blur-3xl opacity-20 -z-10"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary-100 rounded-full blur-3xl opacity-20 -z-10"></div>
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
         <div className="text-center mb-20">
           <div className="inline-block px-6 py-2 bg-red-100 rounded-full mb-4">
-            <span className="text-red-600 font-semibold text-sm">AREE DI SPECIALIZZAZIONE</span>
+            <span className="text-primary-600 font-semibold text-sm tracking-widest">AREE DI INTERVENTO</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-extrabold mb-6">
             Patologie <span className="gradient-text">Trattate</span>
