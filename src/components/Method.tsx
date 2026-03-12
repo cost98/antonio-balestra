@@ -11,9 +11,9 @@ export default function Method() {
         "Anamnesi familiare (fondamentale in ottica preventiva)",
         "Anamnesi patologica remota",
         "Anamnesi fisiologica",
-        "Valutazione degli esami ematici"
+        "Valutazione degli esami ematochimici"
       ],
-      color: "from-blue-400 to-blue-600",
+      color: "from-yellow-300 to-yellow-400",
     },
     {
       number: "02",
@@ -23,9 +23,9 @@ export default function Method() {
       details: [
         "Calorimetria indiretta COSMED",
         "Bioimpedenziometria AKERN",
-        "Misurazioni antropometriche e psicometria"
+        "Misurazioni antropometriche e pliicometria"
       ],
-      color: "from-green-400 to-green-600",
+      color: "from-yellow-300 to-yellow-400",
     },
     {
       number: "03",
@@ -36,7 +36,7 @@ export default function Method() {
         "Piano nutrizionale su misura",
         "Integrazione nutraceutica solo se clinicamente indicata"
       ],
-      color: "from-purple-400 to-purple-600",
+      color: "from-yellow-300 to-yellow-400",
     },
     {
       number: "04",
@@ -48,7 +48,7 @@ export default function Method() {
         "Rivalutazioni cliniche",
         "Adattamento del piano nel tempo"
       ],
-      color: "from-orange-400 to-orange-600",
+      color: "from-yellow-300 to-yellow-400",
     },
   ];
 
@@ -73,7 +73,7 @@ export default function Method() {
             Un Metodo in <span className="text-yellow-300">4 Step</span>
           </h2>
           <p className="text-white/90 text-xl max-w-3xl mx-auto leading-relaxed">
-            Un approccio multidisciplinare che unisce scienza, esperienza clinica e attenzione personalizzata per risultati duraturi.
+            Il mio metodo integra nutrizione clinica, metabolomica e nutrigenomica, utilizzando dieta mediterranea e dieta chetogenica in ambito clinico, quando indicato.
           </p>
         </div>
 
