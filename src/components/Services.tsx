@@ -149,7 +149,7 @@ export default function Services() {
         <div className="mt-32">
           <div className="text-center mb-20">
             <div className="inline-block px-6 py-2 bg-primary-100 rounded-full mb-4">
-              <span className="text-primary-600 font-semibold text-sm">TECNOLOGIE AVANZATE</span>
+              <span className="text-primary-600 font-semibold text-sm tracking-widest">TECNOLOGIE AVANZATE</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-extrabold mb-6">
               Strumenti <span className="gradient-text">in Studio</span>

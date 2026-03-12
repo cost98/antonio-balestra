@@ -49,8 +49,8 @@ export default function Testimonials() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-20">
-          <div className="inline-block px-6 py-2 bg-yellow-100 rounded-full mb-4">
-            <span className="text-yellow-700 font-semibold text-sm">TESTIMONIANZE</span>
+          <div className="inline-block px-6 py-2 bg-primary-100 rounded-full mb-4">
+            <span className="text-primary-600 font-semibold text-sm tracking-widest">TESTIMONIANZE</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-extrabold mb-6">
             Cosa Dicono di Me <span className="gradient-text">I Miei Pazienti</span>
