@@ -128,24 +128,26 @@ export default function About() {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {milestones.map((milestone, index) => (
-                <div key={index} className="group relative">
-                  <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 h-full">
-                    {/* Icon */}
-                    <div className={`w-16 h-16 bg-gradient-to-br ${milestone.color} rounded-xl flex items-center justify-center text-white mb-4 transform group-hover:scale-110 group-hover:rotate-6 transition-all shadow-lg`}>
+                <div
+                  key={index}
+                  className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 overflow-hidden h-full"
+                >
+                  <div className={`absolute inset-0 bg-gradient-to-br ${milestone.color.replace('from-', 'from-').replace('to-', 'to-').replace(/500/g, '50')} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
+                  
+                  <div className="relative p-8 h-full flex flex-col">
+                    <div className={`w-20 h-20 bg-gradient-to-br ${milestone.color} rounded-2xl flex items-center justify-center text-white mb-6 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg`}>
                       {milestone.icon}
                     </div>
-
-                    <h4 className="text-xl font-bold text-gray-900 mb-2">{milestone.title}</h4>
-                    <p className="text-gray-600 text-sm whitespace-pre-line">{milestone.description}</p>
+                    
+                    <h4 className="text-xl font-bold mb-4 text-gray-900 group-hover:text-gray-800 transition-colors flex-grow">{milestone.title}</h4>
+                    <p className="text-gray-600 leading-relaxed flex-grow text-sm whitespace-pre-line">{milestone.description}</p>
                   </div>
 
-                  {/* Connection Line */}
-                  {index < milestones.length - 1 && (
-                    <div className="hidden lg:block absolute top-12 left-full w-full h-1 -ml-3">
-                    </div>
-                  )}
+                  <div className="absolute top-0 right-0 w-20 h-20 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <div className={`w-full h-full bg-gradient-to-br ${milestone.color} rounded-bl-full`}></div>
+                  </div>
                 </div>
               ))}
             </div>
