@@ -4,39 +4,40 @@ import Image from "next/image";
 export default function About() {
   const milestones = [
     {
-      icon: <FaHospital className="text-3xl" />,
+      icon: <FaGraduationCap className="text-3xl" />,
       title: "Laurea Triennale in Scienze Biomediche",
-      description: "Università degli Studi di Pavia",
-      year: "XXXX",
+      description: "Università degli Studi di Pavia\nTesi in: Applicazione della dieta chetogenica nel diabete, nell'epilessia farmaco-resistente e nelle patologie neurodegenerative",
       color: "from-blue-500 to-cyan-500",
     },
     {
       icon: <FaAward className="text-3xl" />,
       title: "Tirocinio curricolare in Biochimica Clinica",
       description: "Università degli Studi di Pavia",
-      year: "XXXX",
       color: "from-green-500 to-emerald-500",
     },
     {
       icon: <FaGlobe className="text-3xl" />,
       title: "Laurea Magistrale in Alimentazione e Nutrizione Umana",
-      description: "Università degli Studi di Milano",
-      year: "XXXX",
+      description: "Università degli Studi di Milano\nTesi in: Dietoterapia e integrazione della vitamina D in pazienti affetti da piede diabetico",
       color: "from-purple-500 to-pink-500",
     },
     {
-      icon: <FaGlobe className="text-3xl" />,
+      icon: <FaGraduationCap className="text-3xl" />,
       title: "Master di II livello in Nutrizione Clinica",
-      description: "Università degli Studi di Pavia",
-      year: "XXXX",
-      color: "from-purple-500 to-pink-500",
+      description: "Università degli Studi di Pavia\nTesi in: Gestione nutrizionale del paziente diabetico con anemia",
+      color: "from-orange-500 to-red-500",
+    },
+    {
+      icon: <FaHospital className="text-3xl" />,
+      title: "Iscrizione all'Albo dei Biologi della Lombardia",
+      description: "Riconoscimento professionale",
+      color: "from-indigo-500 to-purple-500",
     },
     {
       icon: <FaGlobe className="text-3xl" />,
       title: "Studente di Medicina e Chirurgia",
       description: "Università degli Studi di Milano",
-      year: "XXXX",
-      color: "from-purple-500 to-pink-500",
+      color: "from-pink-500 to-rose-500",
     },
   ];
 
@@ -118,11 +119,11 @@ export default function About() {
           </div>
 
           {/* Milestones Timeline */}
-          <div className="mb-16">
-            <h3 className="text-3xl font-bold text-center mb-8">Percorso Formativo</h3>
+          <div className="mt-24 pt-16">
+            <h3 className="text-3xl font-bold text-center mb-12">Percorso Formativo</h3>
             
-            <div className="mb-12">
-              <p className="text-gray-700 text-lg leading-relaxed">
+            <div className="max-w-4xl mx-auto mb-12">
+              <p className="text-gray-700 text-lg leading-relaxed text-center">
                 Il mio percorso accademico si è articolato attraverso una <strong>laurea triennale in Scienze Biomediche</strong> con una tesi sull&apos;applicazione della dieta chetogenica nel diabete, nell&apos;epilessia farmaco-resistente e nelle patologie neurodegenerative, un tirocinio in Biochimica Clinica, una <strong>laurea magistrale in Alimentazione e Nutrizione Umana</strong> con tesi sulla dietoterapia e integrazione della vitamina D nei pazienti con piede diabetico, e un <strong>master di II livello in Nutrizione Clinica</strong> focalizzato sulla gestione nutrizionale del paziente diabetico con anemia.
               </p>
             </div>
@@ -131,18 +132,13 @@ export default function About() {
               {milestones.map((milestone, index) => (
                 <div key={index} className="group relative">
                   <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 h-full">
-                    {/* Year Badge */}
-                    <div className="absolute -top-4 -right-4 w-14 h-14 bg-gradient-to-br from-yellow-400 to-orange-400 rounded-xl flex items-center justify-center text-white font-bold text-sm shadow-lg transform group-hover:rotate-12 transition-all">
-                      {milestone.year}
-                    </div>
-
                     {/* Icon */}
                     <div className={`w-16 h-16 bg-gradient-to-br ${milestone.color} rounded-xl flex items-center justify-center text-white mb-4 transform group-hover:scale-110 group-hover:rotate-6 transition-all shadow-lg`}>
                       {milestone.icon}
                     </div>
 
                     <h4 className="text-xl font-bold text-gray-900 mb-2">{milestone.title}</h4>
-                    <p className="text-gray-600 text-sm">{milestone.description}</p>
+                    <p className="text-gray-600 text-sm whitespace-pre-line">{milestone.description}</p>
                   </div>
 
                   {/* Connection Line */}
