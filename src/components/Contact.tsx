@@ -30,9 +30,9 @@ export default function Contact() {
   };
 
   const locations = [
-    { city: "Milano", address: "ASST Santi Paolo e Carlo" },
-    { city: "Pavia", address: "Via Cascinazza 15" },
-    { city: "Brescia", address: "Studio Medico Privato" },
+    { city: "Opera (Milano)", address: "Via Giacomo Leopardi 3", maps: "https://maps.google.com/?q=Via+Giacomo+Leopardi+3,+Opera,+Milano" },
+    { city: "Piacenza", address: "Vicolo Buffalari 2A", maps: "https://maps.google.com/?q=Vicolo+Buffalari+2A,+Piacenza" },
+    { city: "San Genesio (Pavia)", address: "life&sport STUDIO – Via E. Fermi 2", maps: "https://maps.google.com/?q=life+%26+sport+STUDIO+Via+E.+Fermi+2+San+Genesio+ed+Uniti+PV" },
   ];
 
   return (
@@ -209,7 +209,13 @@ export default function Contact() {
                 </div>
                 <div className="space-y-3">
                   {locations.map((location, index) => (
-                    <div key={index} className="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-4 border border-primary-200">
+                    <a
+                      key={index}
+                      href={location.maps}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl p-4 border border-primary-200 hover:border-primary-400 hover:shadow-md transition-all block"
+                    >
                       <div className="flex items-center gap-3">
                         <FaMapMarkerAlt className="text-2xl text-primary-600" />
                         <div>
@@ -217,7 +223,7 @@ export default function Contact() {
                           <p className="text-sm text-gray-700 font-medium">{location.address}</p>
                         </div>
                       </div>
-                    </div>
+                    </a>
                   ))}
                 </div>
                 <p className="text-sm text-gray-600 mt-4">

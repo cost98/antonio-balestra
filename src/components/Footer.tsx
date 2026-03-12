@@ -92,18 +92,31 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Location */}
+          {/* Locations */}
           <div>
-            <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-4">Sede Principale</h4>
-            <div className="flex items-start gap-3 text-gray-300">
-              <div className="w-9 h-9 rounded-lg bg-primary-500/20 flex items-center justify-center flex-shrink-0">
-                <FaMapMarkerAlt className="text-primary-400 text-sm" />
-              </div>
-              <div>
-                <p className="font-medium">Via Cascinazza 15</p>
-                <p>27100 Pavia, Italia</p>
-                <p className="text-sm mt-2 text-gray-500">Visite anche a Milano e Brescia</p>
-              </div>
+            <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-4">Sedi</h4>
+            <div className="space-y-3">
+              {[
+                { city: "Opera (Milano)", address: "Via Giacomo Leopardi 3", maps: "https://maps.google.com/?q=Via+Giacomo+Leopardi+3,+Opera,+Milano" },
+                { city: "Piacenza", address: "Vicolo Buffalari 2A", maps: "https://maps.google.com/?q=Vicolo+Buffalari+2A,+Piacenza" },
+                { city: "San Genesio (Pavia)", address: "life&sport STUDIO – Via E. Fermi 2", maps: "https://maps.google.com/?q=life+%26+sport+STUDIO+Via+E.+Fermi+2+San+Genesio+ed+Uniti+PV" },
+              ].map((loc) => (
+                <a
+                  key={loc.city}
+                  href={loc.maps}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-3 text-gray-300 hover:text-white transition-colors group"
+                >
+                  <div className="w-9 h-9 rounded-lg bg-primary-500/20 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-primary-500 transition-colors">
+                    <FaMapMarkerAlt className="text-primary-400 group-hover:text-white text-sm" />
+                  </div>
+                  <div>
+                    <p className="font-medium text-white">{loc.city}</p>
+                    <p className="text-sm text-gray-400">{loc.address}</p>
+                  </div>
+                </a>
+              ))}
             </div>
           </div>
         </div>
