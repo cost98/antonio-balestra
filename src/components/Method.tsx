@@ -140,13 +140,13 @@ export default function Method() {
                 },
                 {
                   icon: <FaCheckCircle className="text-3xl" />,
-                  title: "Educazione del Paziente",
-                  description: "Counseling nutrizionale per rendere il paziente autonomo nelle scelte alimentari quotidiane.",
+                  title: "Monitoraggio Continuo",
+                  description: "Follow-up periodici e rivalutazioni cliniche per adattare il piano nel tempo.",
                 },
                 {
                   icon: <FaCheckCircle className="text-3xl" />,
-                  title: "Supporto Continuo",
-                  description: "Disponibilità per domande e aggiustamenti del piano durante tutto il percorso terapeutico.",
+                  title: "Dietoterapia Avanzata",
+                  description: "Piani prescritti tramite strumenti come calorimetria indiretta e bioimpedenziometria AKERN.",
                 },
               ].map((benefit, index) => (
                 <div key={index} className="flex items-start gap-4 group">
