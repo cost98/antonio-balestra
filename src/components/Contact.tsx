@@ -10,16 +10,12 @@ export default function Contact() {
     phone: "",
     message: "",
   });
-  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({ name: "", email: "", phone: "", message: "" });
-    }, 3000);
+    const subject = `Richiesta di contatto da ${formData.name}`;
+    const body = `Nome: ${formData.name}\nEmail: ${formData.email}\nTelefono: ${formData.phone}\n\nMessaggio:\n${formData.message}`;
+    window.location.href = `mailto:info@antoniobalestra.it?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -45,7 +41,7 @@ export default function Contact() {
         {/* Header */}
         <div className="text-center mb-20">
           <div className="inline-block px-6 py-2 bg-primary-100 rounded-full mb-4">
-            <span className="text-primary-700 font-semibold text-sm">PRENOTA LA TUA VISITA</span>
+            <a href="https://www.miodottore.it/antonio-balestra-2/nutrizionista" target="_blank" rel="noopener noreferrer" className="text-primary-700 font-semibold text-sm">PRENOTA LA TUA VISITA</a>
           </div>
           <h2 className="text-4xl md:text-5xl font-extrabold mb-6">
             Entra in <span className="gradient-text">Contatto</span>
@@ -65,10 +61,9 @@ export default function Contact() {
 
                 <div className="relative flex-1 flex flex-col">
                   <h3 className="text-3xl font-bold mb-2">Invia un Messaggio</h3>
-                  <p className="text-gray-600 mb-8">Compila il form e ti risponderò entro 24 ore</p>
+                  <p className="text-gray-600 mb-8">Compila il form per aprire il tuo client di posta</p>
 
-                  {!isSubmitted ? (
-                    <form onSubmit={handleSubmit} className="space-y-6 flex-1 flex flex-col">
+                  <form onSubmit={handleSubmit} className="space-y-6 flex-1 flex flex-col">
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
                           <label htmlFor="name" className="block text-gray-700 font-semibold mb-2">
@@ -143,17 +138,6 @@ export default function Contact() {
                         <span>Invia Messaggio</span>
                       </button>
                     </form>
-                  ) : (
-                    <div className="text-center py-12 flex-1 flex flex-col justify-center">
-                      <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 animate-bounce">
-                        <FaCheckCircle className="text-5xl text-green-600" />
-                      </div>
-                      <h4 className="text-2xl font-bold text-gray-900 mb-4">Messaggio Inviato!</h4>
-                      <p className="text-gray-600 text-lg">
-                        Ti risponderò al più presto. Grazie per avermi contattato!
-                      </p>
-                    </div>
-                  )}
                 </div>
               </div>
             </div>

@@ -67,7 +67,9 @@ export default function Header() {
               </Link>
             ))}
             <a
-              href="tel:+393393284926"
+              href="https://www.miodottore.it/antonio-balestra-2/nutrizionista"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-gradient-to-r from-primary-600 to-primary-500 text-white px-6 py-3 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300 font-semibold"
             >
               Prenota
@@ -124,7 +126,9 @@ export default function Header() {
             ))}
             <div className="px-4 pt-2">
               <a
-                href="tel:+393393284926"
+                href="https://www.miodottore.it/antonio-balestra-2/nutrizionista"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 bg-gradient-to-r from-primary-600 to-primary-500 text-white px-6 py-4 rounded-full hover:shadow-lg transition-all font-semibold"
               >
                 <FaPhone />

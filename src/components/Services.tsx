@@ -133,7 +133,9 @@ export default function Services() {
         {/* CTA Button */}
         <div className="text-center mt-16">
           <a
-            href="#contact"
+            href="https://www.miodottore.it/antonio-balestra-2/nutrizionista"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary-600 to-primary-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
           >
             <span>Prenota una Consulenza</span>
