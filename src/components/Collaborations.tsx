@@ -1,5 +1,6 @@
 import { FaHospital, FaUserMd, FaBrain, FaSpa, FaHandsHelping, FaStethoscope } from "react-icons/fa";
 import { GiSpinalCoil } from "react-icons/gi";
+import Image from "next/image";
 
 export default function Collaborations() {
   const hospital = {
@@ -46,7 +47,7 @@ export default function Collaborations() {
     },
     {
       icon: <FaUserMd className="text-4xl" />,
-      role: "Ozonoterapeuta",
+      role: "Medico Chirurgo",
       specialization: "Ossigeno-Ozono Terapia",
       description: "Trattamenti innovativi con ozono medicale per diverse applicazioni terapeutiche.",
       gradient: "from-cyan-500 to-blue-500",
@@ -78,11 +79,22 @@ export default function Collaborations() {
 
         {/* NOVACLIN Highlight */}
         <div className="max-w-5xl mx-auto mb-16">
+          {/* AGMEDICA Photo */}
+          <div className="flex justify-center mb-8">
+            <Image
+              src="/images/gallery/AGG.webp"
+              alt="AGMEDICA Poliambulatorio"
+              width={800}
+              height={600}
+              unoptimized
+              className="w-full max-w-md h-auto object-cover"
+            />
+          </div>
+
           <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold text-gray-900 mb-2">NOVACLIN</h3>
-            <p className="text-gray-600 mb-4">Studio Associato - Fondatore</p>
+            <p className="text-gray-600 mb-4">Poliambulatorio - Fondatore</p>
             <p className="text-gray-700 text-lg leading-relaxed max-w-3xl mx-auto">
-              {hospital.description} con l&apos;<span className="font-semibold">{hospital.name}</span>, garantendo un percorso di cura integrato e di eccellenza.
+              {hospital.description} con l&apos;<span className="font-semibold">{hospital.name}</span>, in particolare per le aree di Diabetologia e Ortopedia.
             </p>
           </div>
 
@@ -108,7 +120,7 @@ export default function Collaborations() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
-              Team NOVACLIN
+              Team AGMEDICA
             </h3>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
               Professionisti specializzati che lavorano in sinergia per offrire un supporto completo e multidimensionale.

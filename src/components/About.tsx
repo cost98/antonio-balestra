@@ -96,7 +96,7 @@ export default function About() {
                   Specializzato in <strong>alimentazione e nutrizione umana</strong>, con particolare focus su pazienti diabetici e patologie metaboliche complesse.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  Attualmente lavoro presso l&apos;<strong className="text-primary-600">ASST Santi Paolo e Carlo</strong> di Milano, nel reparto di Ortopedia e Traumatologia, dove mi occupo dell&apos;ambulatorio <strong>Piede Diabetico</strong>, collaborando con un team multidisciplinare.
+                  Sono fondatore di <strong className="text-primary-600">AGMEDICA</strong>, poliambulatorio che opera con una collaborazione attiva in regime di <strong>intramoenia allargata</strong> con l&apos;<strong className="text-primary-600">ASST Santi Paolo e Carlo</strong> di Milano, in particolare per <strong>Diabetologia</strong> e <strong>Ortopedia</strong>.
                 </p>
               </div>
 
