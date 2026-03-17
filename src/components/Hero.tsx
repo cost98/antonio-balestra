@@ -78,14 +78,10 @@ export default function Hero() {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 pt-8 max-w-xl mx-auto lg:mx-0">
+            <div className="grid grid-cols-2 gap-6 pt-8 max-w-xl mx-auto lg:mx-0">
               <div className="text-center lg:text-left">
                 <div className="text-3xl font-bold text-primary-600">500+</div>
                 <div className="text-sm text-gray-600">Pazienti</div>
-              </div>
-              <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold text-primary-600">10+</div>
-                <div className="text-sm text-gray-600">Anni Esperienza</div>
               </div>
               <div className="text-center lg:text-left">
                 <div className="text-3xl font-bold text-primary-600">98%</div>
