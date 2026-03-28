@@ -1,6 +1,5 @@
 import { FaHospital, FaUserMd, FaBrain, FaSpa, FaHandsHelping, FaStethoscope } from "react-icons/fa";
 import { GiSpinalCoil } from "react-icons/gi";
-import Image from "next/image";
 
 export default function Collaborations() {
   const hospital = {
@@ -81,14 +80,19 @@ export default function Collaborations() {
         <div className="max-w-5xl mx-auto mb-16">
           {/* AGMEDICA Photo */}
           <div className="flex justify-center mb-8">
-            <Image
-              src="/images/gallery/AGG.webp"
-              alt="AGMEDICA Poliambulatorio"
-              width={800}
-              height={600}
-              unoptimized
-              className="w-full max-w-md h-auto object-cover"
-            />
+            <picture className="w-full max-w-md">
+              <source
+                srcSet="/images/gallery/AGG-bianco.webp"
+                media="(prefers-color-scheme: dark)"
+                type="image/webp"
+              />
+              <img
+                src="/images/gallery/AGG.webp"
+                alt="AGMEDICA Poliambulatorio"
+                loading="lazy"
+                className="w-full h-auto object-cover"
+              />
+            </picture>
           </div>
 
           <div className="text-center mb-8">

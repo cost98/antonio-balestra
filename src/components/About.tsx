@@ -101,20 +101,6 @@ export default function About() {
                 </p>
               </div>
 
-              {/* Key Points */}
-              <div className="grid grid-cols-2 gap-4 pt-4">
-                {[
-                  { label: "Esperienza", value: "10+ anni" },
-                  { label: "Specializzazioni", value: "5+" },
-                  { label: "Pubblicazioni", value: "3" },
-                  { label: "Lingue", value: "IT, EN" },
-                ].map((stat, index) => (
-                  <div key={index} className="bg-gradient-to-br from-primary-50 to-secondary-50 rounded-xl p-4 text-center hover:shadow-md transition-all">
-                    <div className="text-2xl font-bold text-primary-600">{stat.value}</div>
-                    <div className="text-sm text-gray-600">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
 

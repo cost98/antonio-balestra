@@ -172,7 +172,7 @@ export default function Services() {
                     unoptimized
                     className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
                   />
-                  <div className={`absolute inset-0 bg-gradient-to-t from-${strumento.color}-900/60 to-transparent`}></div>
+                  <div className={`absolute inset-0 bg-gradient-to-t ${strumento.color === "secondary" ? "from-secondary-900/60" : "from-primary-900/60"} to-transparent`}></div>
                 </div>
                 
                 {/* Content */}
@@ -182,7 +182,7 @@ export default function Services() {
                   <ul className="space-y-3">
                     {strumento.benefits.map((benefit, i) => (
                       <li key={i} className="flex items-center">
-                        <FaCheckCircle className={`text-${strumento.color}-500 mr-3 flex-shrink-0`} />
+                        <FaCheckCircle className="text-primary-500 mr-3 flex-shrink-0" />
                         <span className="text-gray-800">{benefit}</span>
                       </li>
                     ))}
