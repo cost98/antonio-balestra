@@ -83,11 +83,11 @@ export default function Footer() {
                 </div>
                 <span>331 788 2547</span>
               </a>
-              <a href="mailto:dottantoniobalestra@gmail.com" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors group">
+              <a href="mailto:dott.antoniobalestra@gmail.com" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors group">
                 <div className="w-9 h-9 rounded-lg bg-primary-500/20 flex items-center justify-center group-hover:bg-primary-500 transition-colors">
                   <FaEnvelope className="text-primary-400 group-hover:text-white text-sm" />
                 </div>
-                <span>dottantoniobalestra@gmail.com</span>
+                <span>dott.antoniobalestra@gmail.com</span>
               </a>
             </div>
           </div>

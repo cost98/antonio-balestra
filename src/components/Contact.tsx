@@ -15,7 +15,7 @@ export default function Contact() {
     e.preventDefault();
     const subject = `Richiesta di contatto da ${formData.name}`;
     const body = `Nome: ${formData.name}\nEmail: ${formData.email}\nTelefono: ${formData.phone}\n\nMessaggio:\n${formData.message}`;
-    window.location.href = `mailto:dottantoniobalestra@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:dott.antoniobalestra@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -172,10 +172,10 @@ export default function Contact() {
                   <div className="flex-1">
                     <h4 className="font-bold text-gray-900 mb-2 text-lg">Scrivimi</h4>
                     <a
-                      href="mailto:dottantoniobalestra@gmail.com"
+                      href="mailto:dott.antoniobalestra@gmail.com"
                       className="text-primary-600 hover:text-primary-700 font-semibold text-base block break-all hover:scale-105 transition-transform"
                     >
-                      dottantoniobalestra@gmail.com
+                      dott.antoniobalestra@gmail.com
                     </a>
                     <p className="text-sm text-gray-600 mt-2 font-medium">Risposta entro 24h</p>
                     <p className="text-xs text-gray-500 mt-1">Consulenza anche via email</p>

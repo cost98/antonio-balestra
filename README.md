@@ -147,7 +147,7 @@ colors: {
 ## 📧 Contatti
 
 **Dr. Antonio Balestra**
-- Email: dottantoniobalestra@gmail.com
+- Email: dott.antoniobalestra@gmail.com
 - Tel: +39 331 788 2547
 - Indirizzo: Via Cascinazza 15, Pavia
 
