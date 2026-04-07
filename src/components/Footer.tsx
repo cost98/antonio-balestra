@@ -77,11 +77,11 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-4">Contatti</h4>
             <div className="space-y-4">
-              <a href="tel:+393393284926" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors group">
+              <a href="tel:+393317882547" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors group">
                 <div className="w-9 h-9 rounded-lg bg-primary-500/20 flex items-center justify-center group-hover:bg-primary-500 transition-colors">
                   <FaPhone className="text-primary-400 group-hover:text-white text-sm" />
                 </div>
-                <span>339 328 4926</span>
+                <span>331 788 2547</span>
               </a>
               <a href="mailto:dottantoniobalestra@gmail.com" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors group">
                 <div className="w-9 h-9 rounded-lg bg-primary-500/20 flex items-center justify-center group-hover:bg-primary-500 transition-colors">

@@ -153,10 +153,10 @@ export default function Contact() {
                   <div className="flex-1">
                     <h4 className="font-bold text-gray-900 mb-2 text-lg">Chiamami</h4>
                     <a
-                      href="tel:+393393284926"
+                      href="tel:+393317882547"
                       className="text-primary-600 hover:text-primary-700 font-bold text-xl block hover:scale-105 transition-transform"
                     >
-                      +39 339 328 4926
+                      +39 331 788 2547
                     </a>
                     <p className="text-sm text-gray-600 mt-2 font-medium">Lun-Ven 9:00-18:00</p>
                     <p className="text-xs text-gray-500 mt-1">Preferibile orario mattutino</p>
