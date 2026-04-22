@@ -127,8 +127,8 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Dr. Antonio Balestra. Tutti i diritti riservati.
           </p>
           <div className="flex gap-6">
-            <Link href="#" className="text-gray-500 hover:text-primary-400 transition-colors">Privacy Policy</Link>
-            <Link href="#" className="text-gray-500 hover:text-primary-400 transition-colors">Cookie Policy</Link>
+            <Link href="/privacy-policy" className="text-gray-500 hover:text-primary-400 transition-colors">Privacy Policy</Link>
+            <Link href="/cookie-policy" className="text-gray-500 hover:text-primary-400 transition-colors">Cookie Policy</Link>
           </div>
         </div>
       </div>
