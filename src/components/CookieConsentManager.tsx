@@ -37,6 +37,13 @@ export default function CookieConsentManager() {
     } else {
       setConsent("unknown");
     }
+
+    const handleOpenPreferences = () => {
+      localStorage.removeItem(CONSENT_KEY);
+      setConsent("unknown");
+    };
+    window.addEventListener("open-cookie-preferences", handleOpenPreferences);
+    return () => window.removeEventListener("open-cookie-preferences", handleOpenPreferences);
   }, []);
 
   const handleChoice = (value: Exclude<ConsentState, "unknown">) => {

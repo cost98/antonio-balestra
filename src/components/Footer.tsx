@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { FaLinkedin, FaFacebook, FaInstagram, FaPhone, FaEnvelope, FaMapMarkerAlt, FaArrowRight } from "react-icons/fa";
+import CookiePreferencesButton from "@/components/CookiePreferencesButton";
 
 export default function Footer() {
   return (
@@ -129,6 +130,7 @@ export default function Footer() {
           <div className="flex gap-6">
             <Link href="/privacy-policy" className="text-gray-500 hover:text-primary-400 transition-colors">Privacy Policy</Link>
             <Link href="/cookie-policy" className="text-gray-500 hover:text-primary-400 transition-colors">Cookie Policy</Link>
+            <CookiePreferencesButton />
           </div>
         </div>
       </div>
