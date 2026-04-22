@@ -72,13 +72,14 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-24 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+    <section id="services" className="py-16 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
       {/* Background Decorations */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary-100 rounded-full blur-3xl opacity-20 -z-10"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary-100 rounded-full blur-3xl opacity-20 -z-10"></div>
 
       <div className="container mx-auto px-4">
-        <div className="text-center mb-20">
+        <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-16">
           <div className="inline-block px-6 py-2 bg-primary-100 rounded-full mb-4">
             <span className="text-primary-600 font-semibold text-sm tracking-widest">SERVIZI PROFESSIONALI</span>
           </div>
@@ -146,8 +147,8 @@ export default function Services() {
         </div>
 
         {/* Strumenti Section */}
-        <div className="mt-32">
-          <div className="text-center mb-20">
+        <div className="mt-20">
+          <div className="text-center mb-16">
             <div className="inline-block px-6 py-2 bg-primary-100 rounded-full mb-4">
               <span className="text-primary-600 font-semibold text-sm tracking-widest">TECNOLOGIE AVANZATE</span>
             </div>
@@ -192,6 +193,7 @@ export default function Services() {
             ))}
           </div>
         </div>
+        </div> {/* max-w-6xl */}
       </div>
     </section>
   );

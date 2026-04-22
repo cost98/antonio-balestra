@@ -55,7 +55,7 @@ export default function Collaborations() {
   ];
 
   return (
-    <section id="collaborations" className="py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+    <section id="collaborations" className="py-16 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-96 h-96 bg-primary-200/20 rounded-full blur-3xl animate-float"></div>

@@ -94,14 +94,15 @@ export default function Pathologies() {
   ];
 
   return (
-    <section id="pathologies" className="py-24 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+    <section id="pathologies" className="py-16 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
       {/* Background Decorations */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary-100 rounded-full blur-3xl opacity-20 -z-10"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary-100 rounded-full blur-3xl opacity-20 -z-10"></div>
 
       <div className="container mx-auto px-4 relative z-10">
+        <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-16">
           <div className="inline-block px-6 py-2 bg-primary-100 rounded-full mb-4">
             <span className="text-primary-600 font-semibold text-sm tracking-widest">AREE DI INTERVENTO</span>
           </div>
@@ -114,7 +115,7 @@ export default function Pathologies() {
         </div>
 
         {/* Pathologies Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {pathologies.map((pathology, index) => (
             <div
               key={index}
@@ -172,6 +173,7 @@ export default function Pathologies() {
             </a>
           </div>
         </div>
+        </div> {/* max-w-6xl */}
       </div>
     </section>
   );
