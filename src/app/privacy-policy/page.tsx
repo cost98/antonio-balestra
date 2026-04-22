@@ -80,7 +80,7 @@ export default function PrivacyPolicyPage() {
             <ul className="list-disc pl-6 mt-2 space-y-1">
               <li><strong>Google LLC</strong> (Analytics, Ads, Tag Manager) – trasferimento negli USA con garanzie adeguate (Data Privacy Framework EU-USA).</li>
               <li><strong>Meta Platforms Ireland Ltd.</strong> (Meta Pixel) – trasferimento negli USA con garanzie adeguate (Data Privacy Framework EU-USA).</li>
-              <li><strong>Provider di hosting</strong> – per l'erogazione del sito web.</li>
+              <li><strong>Provider di hosting</strong> – per l&apos;erogazione del sito web.</li>
             </ul>
             <p className="mt-2">Nessun dato viene venduto a terzi.</p>
           </section>
